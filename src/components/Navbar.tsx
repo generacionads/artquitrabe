@@ -36,7 +36,7 @@ export default function Navbar() {
         href="#contacto"
         className="inline-flex items-center px-[22px] py-[10px] bg-[#184690] text-[#FFFFFF] text-[13px] font-semibold rounded-sm tracking-wide whitespace-nowrap no-underline hover:bg-[#0F2D5E] transition-colors"
       >
-        Solicitar presupuesto
+        Contacto
       </Link>
     </nav>
   );

@@ -70,7 +70,15 @@ export default function Contact() {
           </div>
 
           {/* Right: Form */}
-          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+          <form
+            className="space-y-4"
+            action="https://formsubmit.co/hola@artquitrabe.com"
+            method="POST"
+          >
+            <input type="hidden" name="_cc" value="mzornoza@generacionads.com,porgaz@generacionads.com,ivilloria@generacionads.com" />
+            <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto - Art-Quitrabe" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
             <div>
               <label className="block text-[11px] font-semibold tracking-[0.12em] uppercase text-white/35 mb-1.5">
                 Nombre *

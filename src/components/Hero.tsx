@@ -45,7 +45,15 @@ export default function Hero() {
               Te llamamos en menos de 24h
             </p>
 
-            <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
+            <form
+              className="space-y-3"
+              action="https://formsubmit.co/hola@artquitrabe.com"
+              method="POST"
+            >
+              <input type="hidden" name="_cc" value="mzornoza@generacionads.com,porgaz@generacionads.com,ivilloria@generacionads.com" />
+              <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto - Art-Quitrabe" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
               <input
                 type="text"
                 required
@@ -72,7 +80,7 @@ export default function Hero() {
                 type="submit"
                 className="w-full py-3.5 bg-[#184690] text-[#FFFFFF] font-semibold text-[14px] rounded-sm hover:bg-[#0F2D5E] transition-colors cursor-pointer"
               >
-                Solicitar visita gratuita →
+                Solicitar presupuesto →
               </button>
             </form>
           </div>

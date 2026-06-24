@@ -57,12 +57,12 @@ export default function ViviendaSection() {
               nos encargamos de todo. Precio cerrado, plazos garantizados y
               diseño a medida.
             </p>
-            <Link
+            <a
               href="#contacto"
               className="self-start inline-flex items-center gap-2 px-7 py-3.5 bg-[#184690] text-[#FFFFFF] text-[13px] font-semibold rounded-sm hover:bg-[#0F2D5E] transition-colors no-underline"
             >
               Solicitar presupuesto
-            </Link>
+            </a>
           </div>
         </div>
 
