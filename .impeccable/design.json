@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-22T00:00:00Z",
+  "title": "Design System: Art-Quitrabe",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Azul Marino Profundo",
+        "canonical": "oklch(31.5% 0.141 254.6)",
+        "tonalRamp": ["#04112D", "#0A2050", "#0F2E6D", "#184690", "#225DBF", "#3B7DE0", "#7AAEF2", "#C4D8FA"]
+      },
+      "primary-dark": {
+        "role": "primary",
+        "displayName": "Navy Oscuro",
+        "canonical": "oklch(21% 0.12 254.6)",
+        "tonalRamp": ["#020A1A", "#060F30", "#0A1B48", "#0F2D5E", "#163D7E", "#2050A0", "#6890D8", "#B8CEF2"]
+      },
+      "primary-mid": {
+        "role": "primary",
+        "displayName": "Navy Medio",
+        "canonical": "oklch(41% 0.138 254.6)",
+        "tonalRamp": ["#050F25", "#0B1D48", "#112B6A", "#1840A0", "#2055A8", "#3B72D4", "#88B4EE", "#CCDFF8"]
+      },
+      "dark": {
+        "role": "neutral",
+        "displayName": "Casi-Negro",
+        "canonical": "oklch(7.5% 0.018 265)",
+        "tonalRamp": ["#050508", "#0D0D14", "#191924", "#2A2A38", "#454550", "#686870", "#9D9DA3", "#D4D4D8"]
+      },
+      "dark-surface": {
+        "role": "neutral",
+        "displayName": "Dark Surface",
+        "canonical": "oklch(11% 0.018 265)",
+        "tonalRamp": ["#070710", "#14141E", "#21212E", "#303040", "#484852", "#6E6E7A", "#A0A0AA", "#D8D8E0"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Blanco Arquitectónico",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": ["#9B9B9B", "#B5B5B5", "#C9C9C9", "#DEDEDE", "#EBEBEB", "#F3F3F3", "#F9F9F9", "#FFFFFF"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Gris Superficie",
+        "canonical": "oklch(97.5% 0 0)",
+        "tonalRamp": ["#939393", "#ACACAC", "#C3C3C3", "#D7D7D7", "#E5E5E5", "#EFEFEF", "#F5F5F5", "#F8F8F8"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta Principal",
+        "canonical": "oklch(7.5% 0.018 265)",
+        "tonalRamp": ["#050508", "#0D0D14", "#191924", "#2A2A38", "#454550", "#686870", "#9D9DA3", "#D4D4D8"]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Tinta Secundaria",
+        "canonical": "oklch(35% 0.012 265)",
+        "tonalRamp": ["#0E0E18", "#1E1E2A", "#2C2C3C", "#3E3E50", "#4A4A52", "#686875", "#9C9CA5", "#D2D2D8"]
+      },
+      "ink-subtle": {
+        "role": "neutral",
+        "displayName": "Tinta Sutil",
+        "canonical": "oklch(58% 0.01 265)",
+        "tonalRamp": ["#202028", "#303040", "#444454", "#585868", "#6E6E80", "#8A8A94", "#B5B5BC", "#E0E0E4"]
+      }
+    },
+    "typographyMeta": {
+      "display":  { "displayName": "Display",  "purpose": "H1 del hero. Una sola instancia por página." },
+      "headline": { "displayName": "Headline", "purpose": "H2 de sección. Introduce cada bloque editorial." },
+      "title":    { "displayName": "Title",    "purpose": "H3 en cards y secciones internas." },
+      "body":     { "displayName": "Body",     "purpose": "Párrafos descriptivos. Máx 65ch. Color ink-muted sobre fondos claros." },
+      "label":    { "displayName": "Label",    "purpose": "Versalitas para orientación de sección. Uso selectivo — máx una por sección." }
+    },
+    "shadows": [
+      {
+        "name": "overlay-card",
+        "value": "0 8px 32px rgba(13,13,20,0.12)",
+        "purpose": "Sombra para modales, dropdowns, y elementos flotantes. No usar en cards en reposo."
+      },
+      {
+        "name": "focus-navy",
+        "value": "0 0 0 3px rgba(24,70,144,0.35)",
+        "purpose": "Glow de focus-visible en elementos interactivos sobre fondos claros."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Transiciones de estado estándar (hover, focus, active)."
+      },
+      {
+        "name": "ease-out-smooth",
+        "value": "cubic-bezier(0.0, 0.0, 0.2, 1)",
+        "purpose": "Salida de overlays, expansión de accordions."
+      },
+      {
+        "name": "duration-fast",
+        "value": "150ms",
+        "purpose": "Botones, links, cambios de borde."
+      },
+      {
+        "name": "duration-standard",
+        "value": "250ms",
+        "purpose": "Transiciones de fondo, expansión de acordeón."
+      },
+      {
+        "name": "duration-entrance",
+        "value": "600ms",
+        "purpose": "Reveals de sección con scroll. Siempre con fallback reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm",  "value": "640px"  },
+      { "name": "md",  "value": "768px"  },
+      { "name": "lg",  "value": "1024px" },
+      { "name": "xl",  "value": "1280px" },
+      { "name": "2xl", "value": "1536px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary CTA Button",
+      "kind": "button",
+      "refersTo": "button-cta",
+      "description": "Acción principal de conversión. Máximo uno por viewport visible.",
+      "html": "<button class=\"ds-btn-cta\">Solicitar presupuesto</button>",
+      "css": ".ds-btn-cta { display: inline-flex; align-items: center; gap: 6px; background: #184690; color: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 14px; font-weight: 600; padding: 14px 28px; border: none; border-radius: 2px; cursor: pointer; letter-spacing: 0.01em; transition: background 150ms cubic-bezier(0.4,0,0.2,1); } .ds-btn-cta:hover { background: #0F2D5E; } .ds-btn-cta:focus-visible { outline: 2px solid #184690; outline-offset: 3px; } .ds-btn-cta:active { background: #0A1D40; transform: translateY(1px); }"
+    },
+    {
+      "name": "Dark Button",
+      "kind": "button",
+      "refersTo": "button-dark",
+      "description": "Acción de navegación secundaria sobre fondos claros.",
+      "html": "<button class=\"ds-btn-dark\">Ver proyectos</button>",
+      "css": ".ds-btn-dark { display: inline-flex; align-items: center; background: #0D0D14; color: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 14px; font-weight: 600; padding: 14px 28px; border: none; border-radius: 2px; cursor: pointer; letter-spacing: 0.01em; transition: background 150ms cubic-bezier(0.4,0,0.2,1); } .ds-btn-dark:hover { background: #1A1A28; } .ds-btn-dark:focus-visible { outline: 2px solid #184690; outline-offset: 3px; } .ds-btn-dark:active { transform: translateY(1px); }"
+    },
+    {
+      "name": "Ghost Button (on dark)",
+      "kind": "button",
+      "refersTo": "button-ghost-on-dark",
+      "description": "Acción alternativa. Solo sobre fondos oscuros (#0D0D14).",
+      "html": "<button class=\"ds-btn-ghost\">Ver todos los proyectos</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; background: transparent; color: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 14px; font-weight: 600; padding: 13px 28px; border: 1px solid rgba(255,255,255,0.30); border-radius: 2px; cursor: pointer; letter-spacing: 0.01em; transition: border-color 150ms cubic-bezier(0.4,0,0.2,1), background 150ms cubic-bezier(0.4,0,0.2,1); } .ds-btn-ghost:hover { border-color: rgba(255,255,255,0.60); background: rgba(255,255,255,0.06); } .ds-btn-ghost:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 3px; }"
+    },
+    {
+      "name": "Service Image Card",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Card con imagen de fondo e overlay. Para ServicesOverview. 480px de altura mínima.",
+      "html": "<div class=\"ds-img-card\"><div class=\"ds-img-card__bg\"></div><div class=\"ds-img-card__content\"><span class=\"ds-img-card__tag\">Para propietarios</span><h3 class=\"ds-img-card__title\">Reformas de Vivienda</h3><a class=\"ds-img-card__link\" href=\"#viviendas\">Más información →</a></div></div>",
+      "css": ".ds-img-card { position: relative; height: 480px; border-radius: 2px; overflow: hidden; cursor: pointer; } .ds-img-card__bg { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,13,20,0.90) 0%, rgba(13,13,20,0.40) 50%, rgba(13,13,20,0.10) 100%); transition: transform 700ms cubic-bezier(0.0,0.0,0.2,1); } .ds-img-card:hover .ds-img-card__bg { transform: scale(1.05); } .ds-img-card__content { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px; } .ds-img-card__tag { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 8px; } .ds-img-card__title { font-size: 24px; font-weight: 700; color: #FFFFFF; margin: 0 0 16px; } .ds-img-card__link { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.70); text-decoration: none; transition: color 150ms; } .ds-img-card__link:hover { color: #FFFFFF; }"
+    },
+    {
+      "name": "Feature Card (dark bg)",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Card de feature sobre sección oscura. Sin sombra; borde sutil.",
+      "html": "<div class=\"ds-feature-card\"><div class=\"ds-feature-card__bar\"></div><h3 class=\"ds-feature-card__title\">Precio fijo garantizado</h3><p class=\"ds-feature-card__body\">El presupuesto acordado es el precio final. Sin sorpresas.</p></div>",
+      "css": ".ds-feature-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 2px; padding: 24px; transition: border-color 200ms; } .ds-feature-card:hover { border-color: rgba(24,70,144,0.45); } .ds-feature-card__bar { width: 32px; height: 2px; background: #184690; margin-bottom: 16px; } .ds-feature-card__title { font-size: 17px; font-weight: 700; color: #FFFFFF; margin: 0 0 10px; } .ds-feature-card__body { font-size: 14px; font-weight: 400; line-height: 1.6; color: rgba(255,255,255,0.65); margin: 0; }"
+    },
+    {
+      "name": "FAQ Accordion",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Acordeón de preguntas frecuentes sobre fondo blanco/superficie.",
+      "html": "<div class=\"ds-faq\"><button class=\"ds-faq__trigger\" aria-expanded=\"false\"><span>¿Qué incluye la reforma integral?</span><span class=\"ds-faq__icon\">+</span></button><div class=\"ds-faq__body\"><p>La reforma integral incluye...</p></div></div>",
+      "css": ".ds-faq { border-bottom: 1px solid rgba(13,13,20,0.12); } .ds-faq__trigger { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; background: none; border: none; cursor: pointer; text-align: left; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 15px; font-weight: 600; color: #0D0D14; } .ds-faq__icon { flex-shrink: 0; font-size: 20px; font-weight: 300; color: #184690; transition: transform 200ms cubic-bezier(0.4,0,0.2,1); } .ds-faq__trigger[aria-expanded='true'] .ds-faq__icon { transform: rotate(45deg); } .ds-faq__body { overflow: hidden; max-height: 0; transition: max-height 250ms cubic-bezier(0.0,0.0,0.2,1); } .ds-faq__trigger[aria-expanded='true'] + .ds-faq__body { max-height: 400px; } .ds-faq__body p { font-size: 14px; line-height: 1.65; color: #4A4A52; padding-bottom: 20px; margin: 0; }"
+    },
+    {
+      "name": "Form Input",
+      "kind": "input",
+      "refersTo": null,
+      "description": "Campo de texto sobre sección oscura (Contact). Borde sutil, focus en navy.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field__label\">Nombre *</label><input class=\"ds-field__input\" type=\"text\" placeholder=\"Tu nombre\" /></div>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 6px; } .ds-field__label { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; color: rgba(255,255,255,0.70); text-transform: uppercase; } .ds-field__input { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: 2px; padding: 12px 14px; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 14px; color: #FFFFFF; outline: none; transition: border-color 150ms; } .ds-field__input::placeholder { color: #8A8A94; } .ds-field__input:focus { border-color: rgba(24,70,144,0.70); } .ds-field__input:disabled { opacity: 0.5; cursor: not-allowed; }"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Nav fija. Transparent en hero; transición a #0D0D14/95 al hacer scroll.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav__logo\" href=\"/\">Art-Quitrabe</a><div class=\"ds-nav__links\"><a class=\"ds-nav__link\" href=\"/\">Inicio</a><a class=\"ds-nav__link\" href=\"#viviendas\">Viviendas</a></div><a class=\"ds-nav__cta\" href=\"#contacto\">Solicitar presupuesto</a></nav>",
+      "css": ".ds-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 64px; background: transparent; transition: background 250ms cubic-bezier(0.4,0,0.2,1), backdrop-filter 250ms; } .ds-nav--scrolled { background: rgba(13,13,20,0.95); backdrop-filter: blur(8px); } .ds-nav__logo { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 16px; font-weight: 700; color: #FFFFFF; text-decoration: none; } .ds-nav__links { display: flex; gap: 32px; } .ds-nav__link { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.80); text-decoration: none; transition: color 150ms; } .ds-nav__link:hover { color: #FFFFFF; } .ds-nav__cta { background: #184690; color: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 13px; font-weight: 600; padding: 10px 20px; border-radius: 2px; text-decoration: none; transition: background 150ms; outline: 1px solid rgba(255,255,255,0.15); } .ds-nav__cta:hover { background: #0F2D5E; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El Estudio de Arquitectura",
+    "overview": "El diseño de Art-Quitrabe funciona como el despacho de un buen arquitecto: sin ornamento gratuito, con jerarquía precisa, donde cada elemento tiene razón de estar. La calidad se percibe en la resolución de los detalles, no en la acumulación de efectos. El azul marino profundo (Primary #184690) impone autoridad sin frialdad; el blanco verdadero (#FFFFFF) aporta claridad arquitectónica; el casi-negro (#0D0D14) ancla las secciones de mayor peso editorial.\n\nEl sistema rechaza la calidez-por-defecto de los estudios de reformas genéricos (beige, fotos de stock, dorado ostentoso) y también el maximalismo tecnológico (gradientes neón, glassmorphism, cuadrículas de tarjetas idénticas). En cambio, construye confianza mediante proporción, espacio en blanco, y tipografía con criterio.\n\nLa voz visual es la de un profesional que no necesita convencer con decoración: la calidad del trabajo habla desde las imágenes, y el diseño las enmarca sin competir con ellas.",
+    "keyCharacteristics": [
+      "Blanco arquitectónico verdadero como base — no beige, no crema, no papel",
+      "Navy profundo como único acento de marca; su rareza en pantalla es la estrategia",
+      "Tipografía a 800 weight en displays, con tracking negativo: impacto sin ornamento",
+      "Secciones oscuras (#0D0D14) para momentos editoriales de mayor densidad",
+      "Bordes mínimos (2px, rounded-sm): sin ángulos redondeados que suavicen la imagen",
+      "Espaciado generoso en white space; sin relleno innecesario de las áreas vacías"
+    ],
+    "rules": [
+      {
+        "name": "La Regla del Único Acento",
+        "body": "El primario #184690 aparece en ≤10% de cualquier pantalla. CTA principal, un detalle de acento, un elemento de navegación activo. Su rareza es precisamente lo que lo hace trabajar. Si aparece en tres sitios distintos de la misma sección, uno sobra.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla del Blanco Real",
+        "body": "El fondo claro es #FFFFFF o #F8F8F8 — nunca beige, crema, arena, ni cualquier tono cálido. Si la 'calidez' es necesaria, entra por la fotografía y el cobre de los proyectos reales, no por el fondo.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regla del Solo Display",
+        "body": "clamp(46px, 6vw, 88px) a weight 800 aparece una única vez por página: el H1. Duplicar esa escala en otras secciones destruye la jerarquía y devalúa el impacto del hero.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla del Label Escaso",
+        "body": "El label en versalitas es un dispositivo de orientación, no de decoración. Si cada sección tiene uno idéntico, pierde función. Usar con criterio o prescindir de él: es preferible no tenerlo a tenerlo en cada bloque.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regla Sin Sombra",
+        "body": "Si se puede resolver con borde o color de fondo, se resuelve con borde o color de fondo. Sombras solo en contextos de superposición real (dropdown, modal, toast) — donde el elemento literalmente flota sobre otro.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do usar #FFFFFF o #F8F8F8 como fondo claro. Nunca beige, crema, arena, ni warmth-tinted neutrals.",
+      "Do reservar #184690 para CTAs principales y detalles de acento. Máximo dos o tres apariciones en cualquier viewport visible.",
+      "Do verificar contraste ≥4.5:1 en todo texto de cuerpo.",
+      "Do usar text-wrap: balance en H1–H3 para evitar líneas viudas en titulares.",
+      "Do añadir outline: 2px solid rgba(255,255,255,0.25) a botones navy sobre fondos oscuros para separación visual.",
+      "Do usar el label en versalitas con criterio: máximo uno por sección.",
+      "Do dejar los bordes en 2px rounded-sm. El ángulo casi-recto comunica precisión técnica."
+    ],
+    "donts": [
+      "Don't usar beige, crema, #F4F1EB, #FDFAF5 ni ninguna variante warm-tinted como fondo de sección.",
+      "Don't usar #C08A56 (el dorado anterior) en ningún contexto. Ha sido reemplazado por navy.",
+      "Don't poner eyebrows de versalitas en cada sección por defecto.",
+      "Don't numerar elementos (01, 02, 03) salvo cuando el orden es semánticamente importante.",
+      "Don't hacer gradientes de texto (background-clip: text). Prohibido en cualquier contexto.",
+      "Don't usar border-left > 1px como stripe de acento en cards o callouts.",
+      "Don't aplicar sombras decorativas en reposo.",
+      "Don't hacer que el sitio parezca empresa constructora genérica, lujo ostentoso, startup SaaS, ni catálogo de gran superficie."
+    ]
+  }
+}
