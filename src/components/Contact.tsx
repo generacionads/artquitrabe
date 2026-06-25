@@ -85,6 +85,7 @@ export default function Contact() {
               </label>
               <input
                 type="text"
+                name="nombre"
                 required
                 className="w-full bg-white/5 border border-white/10 text-[#FFFFFF] placeholder-white/25 px-4 py-3 text-[14px] rounded-sm focus:outline-none focus:border-[#184690]/60 transition-colors"
                 placeholder="Tu nombre"
@@ -97,6 +98,7 @@ export default function Contact() {
               </label>
               <input
                 type="email"
+                name="email"
                 required
                 className="w-full bg-white/5 border border-white/10 text-[#FFFFFF] placeholder-white/25 px-4 py-3 text-[14px] rounded-sm focus:outline-none focus:border-[#184690]/60 transition-colors"
                 placeholder="tu@email.com"
@@ -105,10 +107,12 @@ export default function Contact() {
 
             <div>
               <label className="block text-[11px] font-semibold tracking-[0.12em] uppercase text-white/35 mb-1.5">
-                Teléfono
+                Teléfono *
               </label>
               <input
                 type="tel"
+                name="telefono"
+                required
                 className="w-full bg-white/5 border border-white/10 text-[#FFFFFF] placeholder-white/25 px-4 py-3 text-[14px] rounded-sm focus:outline-none focus:border-[#184690]/60 transition-colors"
                 placeholder="+34 600 000 000"
               />
@@ -116,10 +120,11 @@ export default function Contact() {
 
             <div>
               <label className="block text-[11px] font-semibold tracking-[0.12em] uppercase text-white/35 mb-1.5">
-                Describe tu proyecto
+                Mensaje
               </label>
               <textarea
                 rows={4}
+                name="mensaje"
                 className="w-full bg-white/5 border border-white/10 text-[#FFFFFF] placeholder-white/25 px-4 py-3 text-[14px] rounded-sm focus:outline-none focus:border-[#184690]/60 transition-colors resize-none"
                 placeholder="Cuéntanos lo que tienes en mente — sin tecnicismos"
               />

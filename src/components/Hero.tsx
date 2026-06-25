@@ -56,24 +56,29 @@ export default function Hero() {
               <input type="hidden" name="_template" value="table" />
               <input
                 type="text"
+                name="nombre"
                 required
                 placeholder="Tu nombre"
                 className="w-full bg-white/6 border border-white/12 text-[#FFFFFF] placeholder-white/30 px-4 py-3 text-[14px] rounded-sm focus:outline-none focus:border-[#184690]/70 transition-colors"
               />
               <input
                 type="tel"
+                name="telefono"
                 required
                 placeholder="Teléfono"
                 className="w-full bg-white/6 border border-white/12 text-[#FFFFFF] placeholder-white/30 px-4 py-3 text-[14px] rounded-sm focus:outline-none focus:border-[#184690]/70 transition-colors"
               />
               <input
                 type="email"
-                placeholder="Email (opcional)"
+                name="email"
+                required
+                placeholder="Email"
                 className="w-full bg-white/6 border border-white/12 text-[#FFFFFF] placeholder-white/30 px-4 py-3 text-[14px] rounded-sm focus:outline-none focus:border-[#184690]/70 transition-colors"
               />
               <textarea
                 rows={3}
-                placeholder="Cuéntanos tu proyecto"
+                name="mensaje"
+                placeholder="Cuéntanos tu proyecto (opcional)"
                 className="w-full bg-white/6 border border-white/12 text-[#FFFFFF] placeholder-white/30 px-4 py-3 text-[14px] rounded-sm focus:outline-none focus:border-[#184690]/70 transition-colors resize-none"
               />
               <button
