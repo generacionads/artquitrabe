@@ -47,10 +47,10 @@ export default function Hero() {
 
             <form
               className="space-y-3"
-              action="https://formsubmit.co/hola@artquitrabe.com"
+              action="https://formsubmit.co/mzornoza@generacionads.com"
               method="POST"
             >
-              <input type="hidden" name="_cc" value="mzornoza@generacionads.com,porgaz@generacionads.com,ivilloria@generacionads.com" />
+              <input type="hidden" name="_cc" value="hola@artquitrabe.com,porgaz@generacionads.com,ivilloria@generacionads.com" />
               <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto - Art-Quitrabe" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
