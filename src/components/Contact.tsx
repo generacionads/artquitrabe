@@ -79,7 +79,7 @@ export default function Contact() {
             <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto - Art-Quitrabe" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_next" value="https://artquitrabereformavivienda.vercel.app/gracias" />
+            <input type="hidden" name="_next" value="https://reformaintegral.artquitrabe.com/gracias" />
             <div>
               <label className="block text-[11px] font-semibold tracking-[0.12em] uppercase text-white/35 mb-1.5">
                 Nombre *
