@@ -36,34 +36,53 @@ export default function CookieBanner() {
   if (!visible) return null;
 
   return (
-    <div
-      role="dialog"
-      aria-label="Aviso de cookies"
-      className="fixed bottom-0 left-0 right-0 z-[90] bg-[#0D0D14] border-t border-white/8 px-4 md:px-8 py-4"
-    >
-      <div className="flex flex-col sm:flex-row sm:items-center gap-4 max-w-screen-xl mx-auto">
-        <p className="text-[13px] text-white/55 leading-relaxed flex-1">
-          Usamos cookies propias y de terceros para analizar el tráfico y mostrarte publicidad relevante.
-          Puedes aceptarlas o rechazarlas.{" "}
-          <a href="/privacidad" className="text-white/75 underline hover:text-white transition-colors">
-            Política de cookies
-          </a>
-        </p>
-        <div className="flex gap-2 shrink-0">
-          <button
-            onClick={reject}
-            className="px-5 py-2.5 text-[13px] font-semibold text-white/60 border border-white/12 rounded-sm hover:border-white/30 hover:text-white transition-colors cursor-pointer"
-          >
-            Rechazar
-          </button>
-          <button
-            onClick={accept}
-            className="px-5 py-2.5 text-[13px] font-semibold text-white bg-[#184690] rounded-sm hover:bg-[#0F2D5E] transition-colors cursor-pointer"
-          >
-            Aceptar todas
-          </button>
+    <>
+      {/* Backdrop */}
+      <div className="fixed inset-0 z-[95] bg-black/60 backdrop-blur-sm" />
+
+      {/* Modal */}
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-label="Aviso de cookies"
+        className="fixed inset-0 z-[96] flex items-center justify-center px-4"
+      >
+        <div className="bg-[#0D0D14] border border-white/10 rounded-sm w-full max-w-[480px] p-8 shadow-2xl">
+          {/* Icon */}
+          <div className="w-10 h-10 rounded-full bg-[#184690]/15 border border-[#184690]/25 flex items-center justify-center mb-5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#184690" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+          </div>
+
+          <h2 className="text-[18px] font-bold text-[#FFFFFF] mb-2">
+            Usamos cookies
+          </h2>
+          <p className="text-[13px] text-white/55 leading-relaxed mb-6">
+            Usamos cookies propias y de terceros para analizar el tráfico y mostrarte publicidad relevante. Puedes aceptarlas todas o rechazarlas.{" "}
+            <a href="/privacidad" className="text-white/75 underline hover:text-white transition-colors">
+              Política de cookies
+            </a>
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-2">
+            <button
+              onClick={reject}
+              className="flex-1 py-3 text-[13px] font-semibold text-white/60 border border-white/12 rounded-sm hover:border-white/30 hover:text-white transition-colors cursor-pointer"
+            >
+              Rechazar
+            </button>
+            <button
+              onClick={accept}
+              className="flex-1 py-3 text-[13px] font-semibold text-white bg-[#184690] rounded-sm hover:bg-[#0F2D5E] transition-colors cursor-pointer"
+            >
+              Aceptar todas
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -75,12 +75,6 @@ export default function Hero() {
                 placeholder="Email"
                 className="w-full bg-white/6 border border-white/12 text-[#FFFFFF] placeholder-white/30 px-4 py-3 text-[14px] rounded-sm focus:outline-none focus:border-[#184690]/70 transition-colors"
               />
-              <textarea
-                rows={3}
-                name="mensaje"
-                placeholder="Cuéntanos tu proyecto (opcional)"
-                className="w-full bg-white/6 border border-white/12 text-[#FFFFFF] placeholder-white/30 px-4 py-3 text-[14px] rounded-sm focus:outline-none focus:border-[#184690]/70 transition-colors resize-none"
-              />
               <button
                 type="submit"
                 className="w-full py-3.5 bg-[#184690] text-[#FFFFFF] font-semibold text-[14px] rounded-sm hover:bg-[#0F2D5E] transition-colors cursor-pointer"

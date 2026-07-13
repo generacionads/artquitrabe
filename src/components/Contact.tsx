@@ -118,17 +118,6 @@ export default function Contact() {
               />
             </div>
 
-            <div>
-              <label className="block text-[11px] font-semibold tracking-[0.12em] uppercase text-white/35 mb-1.5">
-                Mensaje
-              </label>
-              <textarea
-                rows={4}
-                name="mensaje"
-                className="w-full bg-white/5 border border-white/10 text-[#FFFFFF] placeholder-white/25 px-4 py-3 text-[14px] rounded-sm focus:outline-none focus:border-[#184690]/60 transition-colors resize-none"
-                placeholder="Cuéntanos lo que tienes en mente — sin tecnicismos"
-              />
-            </div>
 
             <button
               type="submit"
