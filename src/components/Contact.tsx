@@ -72,13 +72,14 @@ export default function Contact() {
           {/* Right: Form */}
           <form
             className="space-y-4"
-            action="https://api.web3forms.com/submit"
+            action="https://formsubmit.co/mzornoza@generacionads.com"
             method="POST"
           >
-            <input type="hidden" name="access_key" value="435688e5-ed7c-49f3-952d-fac7ea2f77c8" />
-            <input type="hidden" name="subject" value="Nueva solicitud de presupuesto - Art-Quitrabe" />
-            <input type="hidden" name="redirect" value="https://reformaintegral.artquitrabe.com/gracias" />
-            <input type="hidden" name="botcheck" value="" />
+            <input type="hidden" name="_cc" value="hola@artquitrabe.com,porgaz@generacionads.com,ivilloria@generacionads.com" />
+            <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto - Art-Quitrabe" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://reformaintegral.artquitrabe.com/gracias" />
             <div>
               <label className="block text-[11px] font-semibold tracking-[0.12em] uppercase text-white/35 mb-1.5">
                 Nombre *
