@@ -62,7 +62,7 @@ export default function CookieBanner() {
           </h2>
           <p className="text-[13px] text-white/55 leading-relaxed mb-6">
             Usamos cookies propias y de terceros para analizar el tráfico y mostrarte publicidad relevante. Puedes aceptarlas todas o rechazarlas.{" "}
-            <a href="/privacidad" className="text-white/75 underline hover:text-white transition-colors">
+            <a href="https://artquitrabe.com/politica-de-privacidad/" target="_blank" rel="noopener noreferrer" className="text-white/75 underline hover:text-white transition-colors">
               Política de cookies
             </a>
           </p>

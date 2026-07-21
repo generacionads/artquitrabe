@@ -7,12 +7,14 @@ export default function Footer() {
         <p className="text-[12px] text-[#4A4A52]">
           © 2025 Art-Quitrabe. Todos los derechos reservados.
         </p>
-        <Link
-          href="/privacidad"
+        <a
+          href="https://artquitrabe.com/politica-de-privacidad/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-[12px] text-[#4A4A52] hover:text-[#FFFFFF] transition-colors no-underline"
         >
           Política de privacidad
-        </Link>
+        </a>
       </div>
     </footer>
   );
